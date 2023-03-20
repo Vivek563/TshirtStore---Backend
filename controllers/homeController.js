@@ -4,3 +4,11 @@ exports.home = (req, res) => {
     greeting: "Hello form Api",
   });
 };
+
+
+exports.homeDummy = (req, res) => {
+  res.status(200).json({
+    success: true,
+    greeting: "This is another dummy route",
+  });
+};
